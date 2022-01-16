@@ -4,7 +4,7 @@ SHELL = /bin/bash
 build:
 	cd ${PROJECT_DIR}
 	mkdir -p dist/
-	go build -o dist/writelog cmd/writelog.go
+	go build -ldflags '-extldflags "-static"' -o dist/writelog cmd/writelog.go
 
 .PHONY: clean
 clean:
