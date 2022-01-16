@@ -5,7 +5,10 @@
 ## Usage
 
 ```
-echo -ne "line1\nline2" | writelog test.log
+[conni@dudu go-writelog]$ echo -ne "line1\nline2" | writelog test.log
+[conni@dudu go-writelog]$ cat test.log 
+2022-01-16T22:11:46 line1
+2022-01-16T22:11:46 line2
 ```
 
 ## License
